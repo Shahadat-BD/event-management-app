@@ -5,9 +5,9 @@ import Register from "../Authentication/Register/Register";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import NotFound from "../NotFound/NotFound";
 import Home from "../Pages/Home/Home";
-import Blog from "../Pages/Blog/Blog";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
+import Gallery from "../Pages/Gallery/Gallery";
 
 const router = createBrowserRouter([
     {
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             }, 
             {
-                path: '/blog',
-                element: <Blog></Blog>
+                path: '/gallery',
+                element: <Gallery></Gallery>
             }, 
             {
                 path: '/about',

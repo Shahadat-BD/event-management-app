@@ -3,13 +3,51 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const link = <>
-       <li className='pr-7'> <NavLink to={'/'}>Home</NavLink></li>
-       <li className='pr-7'> <NavLink to={'/contact'}>Contact Us</NavLink></li>
-       <li className='pr-7'> <NavLink to={'/about'}>About Info</NavLink></li>
-       <li className='pr-7'> <NavLink to={'/blog'}>Blog</NavLink></li>
+       <li className='pr-10'> 
+       <NavLink  
+        className="px-0 rounded-none font-semibold text-md"
+          style={({ isActive }) => ({
+            color: isActive ? "orange" : "black",
+            borderBottom: isActive ? "2px solid orange" : "none",
+            background: isActive ? "none" : "none",
+          })} to={'/'}>Home
+        </NavLink>
+        </li>
+
+       <li className='pr-10'>
+        <NavLink 
+        className="px-0 rounded-none font-semibold text-md"
+          style={({ isActive }) => ({
+            color: isActive ? "orange" : "black",
+            borderBottom: isActive ? "2px solid orange" : "none",
+            background: isActive ? "none" : "none",
+          })} to={'/contact'}>Contact Us
+          </NavLink>
+          </li>
+       <li className='pr-10'>
+         <NavLink
+          className="px-0 rounded-none font-semibold text-md"
+          style={({ isActive }) => ({
+            color: isActive ? "orange" : "black",
+            borderBottom: isActive ? "2px solid orange" : "none",
+            background: isActive ? "none" : "none",
+          })} to={'/about'}>About Us
+          </NavLink>
+          </li>
+
+       <li className='pr-10'> 
+       <NavLink 
+       className="px-0 rounded-none font-semibold text-md"
+          style={({ isActive }) => ({
+            color: isActive ? "orange" : "black",
+            borderBottom: isActive ? "2px solid orange" : "none",
+            background: isActive ? "none" : "none",
+          })} to={'/gallery'}>Gallery
+          </NavLink>
+        </li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -28,7 +66,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <NavLink to={'/login'} className="btn">Login</NavLink>
+          <NavLink to={'/login'} className="bg-orange-500 text-white px-8 py-2 font-semibold rounded-md">Login</NavLink>
         </div>
       </div>
     );
