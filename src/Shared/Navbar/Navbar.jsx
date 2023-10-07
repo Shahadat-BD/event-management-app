@@ -88,7 +88,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-            {user && <img className='w-12 h-12 rounded-full' src={user.photoURL} alt="" srcset="" />} 
+            {user && <img className='w-12 h-12 rounded-full mr-2' src={user.photoURL} alt="" srcset="" />} 
             <p className='mr-3'>{user && user.displayName}</p>
             {
             user ?   <NavLink onClick={handleLogOut} className="bg-orange-500 text-white px-8 py-2 font-semibold rounded-md">Log out</NavLink> 

@@ -4,14 +4,51 @@ import { Link, useLocation, useNavigate} from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
     const navigate = useNavigate()
     const location = useLocation();
-    console.log(location);
+    const {googleSignIn,setUser,createSignInUser} = useContext(AuthContext)
 
-    const {googleSignIn,setUser} = useContext(AuthContext)
+    const handleRegisterForm = e =>{
+           e.preventDefault()
+           const name = e.target.name.value
+           const email = e.target.email.value
+           const password = e.target.password.value
+           const photoURL = e.target.photoURL.value
+       
+        const regex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{6,}$/;
 
+        if (password.length < 6) {
+           toast('password must be 6 character')
+        }
+         else if (!regex.test(password)) {
+             toast("at least one uppercase and one special character")
+          } 
+          else{
+            createSignInUser(email,password)
+            .then((result)=>{
+              //  update user created
+               updateProfile(result.user,{
+                displayName : name,
+                photoURL : photoURL,
+               })
+               .then(()=>{
+                  console.log('profile updated');
+                  window.location.reload(true)
+               })
+               setUser(result.user)
+               toast('user created Successfully')
+               navigate(location?.state ? location.state : '/')
+            })
+            .catch((error)=>{
+               toast(error.message)
+            })
+          }
+
+    }
+     
     const handleGoogleSignIn = () =>{
         googleSignIn()
         .then((result)=>{
@@ -20,7 +57,7 @@ const Register = () => {
             toast('user logged in successfully')
         })
         .catch((error)=>{
-            console.log(error.message);
+            toast(error.message)
         })
     }
 
@@ -32,13 +69,14 @@ const Register = () => {
             <h1 className="text-3xl font-semibold text-center mt-3 text-orange-500">
               Register Now
             </h1>
-            <form className="card-body">
+            <form className="card-body" onSubmit={handleRegisterForm}>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
                 </label>
                 <input
                   type="text"
+                  name="name"
                   placeholder="name"
                   className="input input-bordered"
                   required
@@ -50,6 +88,7 @@ const Register = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="email"
                   className="input input-bordered"
                   required
@@ -61,6 +100,7 @@ const Register = () => {
                 </label>
                 <input
                   type="text"
+                  name="photoURL"
                   placeholder="photo url"
                   className="input input-bordered"
                   required
@@ -73,6 +113,7 @@ const Register = () => {
                 </label>
                 <input
                   type="password"
+                  name="password"
                   placeholder="password"
                   className="input input-bordered"
                   required
@@ -80,15 +121,19 @@ const Register = () => {
               </div>
 
               <div className="form-control mt-6">
-                <button className="text-white bg-orange-500 py-3 text-lg font-semibold rounded-md">
-                  Register
-                </button>
+                <input  className="text-white border-none cursor-pointer bg-orange-500 py-3 text-lg font-semibold rounded-md"
+                  type="submit"
+                  value={'Register'}
+                >
+               
+                </input>
               </div>
               <div onClick={handleGoogleSignIn} className="flex cursor-pointer justify-center items-center border border-orange-500 rounded-full p-1 ">
                 <FcGoogle className="text-4xl mr-4" />
                 <button> Login With Google</button>
               </div>
-              <div>
+            </form>
+            <div>
                 <p className="text-center">
                   Already have an account ? please{" "}
                   <Link to={"/login"} className="text-orange-500">
@@ -96,7 +141,6 @@ const Register = () => {
                   </Link>
                 </p>
               </div>
-            </form>
           </div>
         </div>
       </div>
