@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import {FcGoogle} from 'react-icons/fc'
 const Login = () => {
+    const location = useLocation()
+    console.log(location);
     return (
         <div>
            <div className="bg-gray-50">

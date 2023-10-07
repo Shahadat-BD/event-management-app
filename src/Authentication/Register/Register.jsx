@@ -1,19 +1,22 @@
 import React, { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate} from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
     const navigate = useNavigate()
+    const location = useLocation();
+    console.log(location);
+
     const {googleSignIn,setUser} = useContext(AuthContext)
 
     const handleGoogleSignIn = () =>{
         googleSignIn()
         .then((result)=>{
             setUser(result.user)
-            navigate('/')
+            navigate(location?.state ? location.state : '/')
             toast('user logged in successfully')
         })
         .catch((error)=>{
