@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
+
+  const {user,logOut} = useContext(AuthContext)
+
+  const handleLogOut = () =>{
+       logOut()
+       .then(()=>{
+           toast('user logOut successfully')
+       })
+       .catch((error)=>{
+        console.log(error.message);
+       })
+  } 
+
     const link = <>
        <li className='pr-10'> 
        <NavLink  
@@ -24,7 +40,10 @@ const Navbar = () => {
           })} to={'/contact'}>Contact Us
           </NavLink>
           </li>
-       <li className='pr-10'>
+       
+       {
+         user ? <>
+          <li className='pr-10'>
          <NavLink
           className="px-0 rounded-none font-semibold text-md"
           style={({ isActive }) => ({
@@ -34,7 +53,6 @@ const Navbar = () => {
           })} to={'/about'}>About Us
           </NavLink>
           </li>
-
        <li className='pr-10'> 
        <NavLink 
        className="px-0 rounded-none font-semibold text-md"
@@ -45,6 +63,10 @@ const Navbar = () => {
           })} to={'/gallery'}>Gallery
           </NavLink>
         </li>
+         </> : ''
+       }
+
+
     </>
     return (
         <div className="navbar">
@@ -66,8 +88,15 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <NavLink to={'/login'} className="bg-orange-500 text-white px-8 py-2 font-semibold rounded-md">Login</NavLink>
+            {user && <img className='w-12 h-12 rounded-full' src={user.photoURL} alt="" srcset="" />} 
+            <p className='mr-3'>{user && user.displayName}</p>
+            {
+            user ?   <NavLink onClick={handleLogOut} className="bg-orange-500 text-white px-8 py-2 font-semibold rounded-md">Log out</NavLink> 
+            :
+            <NavLink to={'/login'} className="bg-orange-500 text-white px-8 py-2 font-semibold rounded-md">Login</NavLink>
+          }
         </div>
+        <ToastContainer></ToastContainer>
       </div>
     );
 };
