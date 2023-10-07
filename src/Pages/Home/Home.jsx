@@ -7,8 +7,10 @@ const Home = () => {
     return (
         <div>
             <Banners></Banners>
+            <div className='lg:w-[80%] w-[90%] m-auto'>
             <Service></Service>
             <Gallery></Gallery>
+            </div>
         </div>
     );
 };

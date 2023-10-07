@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Wedding",
+        "image": "https://i.ibb.co/ky1cCzZ/wedding.jpg",
+        "price": 29.99,
+        "description": "A beautiful outdoor wedding took place in a garden bathed in sunlight. The bride, dressed in a lovely white gown, walked down the aisle with a big smile. They exchanged heartfelt vows under a flowery arch, promising to love each other forever. Guests laughed and shed happy tears, enjoying delicious food. The newlyweds shared their first dance under twinkling lights, surrounded by stars. A stunning cake wowed everyone, and warm toasts filled the air. This special day was a blend of love, romance, and cherished moments that will be treasured forever."
+    },
+    {
+        "id": 2,
+        "name": "Birthday Parties",
+        "image": "https://i.ibb.co/3StJ70n/birthday-parties.jpg",
+        "price": 39.99,
+        "description": "Birthday parties are fun celebrations! Friends and family gather to mark someone's special day. There's usually a colorful cake, often with candles to make a wish. People sing and the birthday person blows out the candles. Gifts wrapped in pretty paper bring excitement. Games, like musical chairs or pin the tail on the donkey, make everyone laugh. Tasty snacks like pizza and cupcakes keep everyone full and happy. Decorations, like balloons and streamers, create a festive atmosphere. It's a day filled with joy, laughter, and making wonderful memories that the birthday person will remember for years to come."
+    },
+    {
+        "id": 3,
+        "name": "Anniversaries",
+        "image": "https://i.ibb.co/GFp7DY0/anniversary.jpg",
+        "price": 49.99,
+        "description": "An anniversary is a special day when a couple celebrates the time they've spent together. It's like a birthday for a marriage or relationship. People often exchange gifts to show their love and appreciation. They may go out for a romantic dinner, reminisce about their journey, and make new promises for the future. Family and friends may join in the celebration, sharing stories and well-wishes. A beautiful cake with candles may be part of the festivities, just like in a birthday party. Anniversaries are a time to reflect on love, commitment, and the wonderful moments shared during the years together."
+    },
+    {
+        "id": 4,
+        "name": "Engagement Parties",
+        "image": "https://i.ibb.co/RBnQgJT/engagement.jpg",
+        "price": 19.99,
+        "description": "An engagement is a special moment when a couple decides to get married. It's like the first step towards a wedding. Typically, one person proposes to the other with a ring, a symbol of their love and commitment. This proposal is often a surprise and can be very romantic. Once the proposal is accepted, the couple announces their engagement to family and friends, who share in their joy. They may plan and celebrate with an engagement party, where everyone congratulates the happy couple. An engagement is a beautiful promise to spend a lifetime together, and it marks the beginning of an exciting journey toward marriage."
+    },
+    {
+        "id": 5,
+        "name": "Retirement Parties",
+        "image": "https://i.ibb.co/WnLfXnd/retirement.jpg",
+        "price": 59.99,
+        "description": "A retirement party is a special event held to honor someone who is ending their career and starting a new chapter in life: retirement. It's a time to celebrate their hard work and achievements. Decorations often include banners and retirement-themed items. Guests gather to share stories and give well-wishes to the retiree. There's usually a delicious meal or snacks, and a cake to mark the occasion. Gifts may be given, such as personalized items or tokens of appreciation. The atmosphere is filled with joy, nostalgia, and anticipation for the retiree's leisurely days ahead, making it a memorable send-off into retirement."
+    },
+    {
+        "id": 6,
+        "name": "Baby shower",
+        "image": "https://i.ibb.co/4j3ctxQ/babay-shower.jpg",
+        "price": 69.99,
+        "description": "A baby shower is a joyful celebration to welcome a new baby into the world. Family and friends gather to shower the expectant parents with love and best wishes. There are usually decorations, like cute baby-themed items and colorful balloons. Games and activities add to the fun, often involving guessing the baby's name or playing baby-related games. Gifts, like tiny clothes and baby gear, are given to help the parents prepare for their new arrival. There's plenty of delicious food and a cake, and everyone shares stories and advice with the parents-to-be. It's a heartwarming event to celebrate the upcoming bundle of joy."
+    }
+]
