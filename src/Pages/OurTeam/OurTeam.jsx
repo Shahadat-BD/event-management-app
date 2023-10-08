@@ -6,7 +6,7 @@ import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare } 
 const OurTeam = () => {
     return (
        <div>
-         <div className='text-center mt-20'>
+         <div className='text-center lg:mt-20 mt-8'>
             <h1 className='lg:text-5xl text-2xl font-bold my-3'>Event Management <span className='text-orange-500'>Team</span></h1>
             <p className='text-gray-500 lg:text-base text-sm lg:w-[70%] w-full m-auto mb-3'>We have three crazy team.Their job is to manage our social events services.Our Team is very dedicated and helpful.From the experience of last three years, we can say that our team is very well organized and we have good feedback from people about our team.</p>
         </div>

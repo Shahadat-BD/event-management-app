@@ -13,8 +13,8 @@ import review_5 from '../../assets/images/review/review-5.jpg'
 import review_6 from '../../assets/images/review/review-6.jpg'
 const Review = () => {
     return (
-        <div className='my-20 lg:w-[85%] w-full m-auto'>
-              <div className='grid grid-cols-3 justify-center gap-5'> 
+        <div className='my-20 lg:w-[85%] w-[90%] m-auto'>
+              <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-5'> 
                  <div className='text-center bg-gray-50 rounded-lg p-5'>
                  <img className='w-16 h-16 rounded-full m-auto absolute -mt-14 ml-32' src={review_1} alt="" srcset="" />
                   <h1 className='text-2xl text-orange-500 font-semibold my-3'>Michel David</h1>
@@ -26,7 +26,7 @@ const Review = () => {
                   <AiFillTwitterSquare className="text-4xl font-bold mr-2" />
                 </div>
                  </div>
-                 <div className='text-center bg-gray-50 rounded-lg p-5'>
+                 <div className='text-center bg-gray-50 rounded-lg p-5 lg:mt-0 md:mt-0 mt-8'>
                  <img className='w-16 h-16 rounded-full m-auto absolute -mt-14 ml-32' src={review_3} alt="" srcset="" />
                   <h1 className='text-2xl text-orange-500 font-semibold my-3'>Adein Markram</h1>
                   <p className=''>social event company made my retirement party. The planning, decor, and coordination were impeccable. A memorable day celebrating my journey.</p>
@@ -38,7 +38,7 @@ const Review = () => {
                 </div>
                  </div>
 
-                 <div className='text-center bg-gray-50 rounded-lg p-5'>
+                 <div className='text-center bg-gray-50 rounded-lg p-5 lg:mt-0 md:mt-8 mt-8'>
                  <img className='w-16 h-16 rounded-full m-auto absolute -mt-14 ml-32' src={review_2} alt="" srcset="" />
                   <h1 className='text-2xl text-orange-500 font-semibold my-3'>Sophia sing</h1>
                   <p className=''>Our wedding was a dream come true, all thanks to social event company. From breathtaking decor to flawless execution, it was perfect in every way.</p>

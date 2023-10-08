@@ -2,11 +2,11 @@ import React from "react";
 import chooseUs from "../../assets/images/chooseUs.jpg";
 const ChooseUs = () => {
   return (
-    <div className="my-20">
+    <div className="lg:my-20 my-8">
       <div className="flex lg:flex-row flex-col">
         <img className="lg:w-[400px] w-full" src={chooseUs} alt="" srcset="" />
-        <div className="ml-10">
-          <h1 className="text-5xl font-bold mb-4 mt-2">Why Choose <span className="text-orange-500">Us ?</span> </h1>
+        <div className="lg:ml-10 ml-2">
+          <h1 className="lg:text-5xl text-2xl font-bold mb-4 mt-2">Why Choose <span className="text-orange-500">Us ?</span> </h1>
             <p className='text-gray-500 mb-2'>
              <span className="text-orange-500 font-semibold text-lg"> Diverse Expertise:</span>: our company specializes in a wide array of events, including anniversaries, retirement parties, weddings, engagements, baby showers, and birthdays.
             </p>

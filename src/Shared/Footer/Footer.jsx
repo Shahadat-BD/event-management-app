@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <div className="bg-[#0B162A]">
-      <footer className="footer p-12 text-base-content ">
+      <footer className="footer lg:p-12 p-12 md:p-5 text-base-content ">
         <aside>
           <p className="text-orange-500 text-4xl font-bold">
             Social <span className="text-white font-bold">Events</span>
@@ -59,7 +59,7 @@ const Footer = () => {
             <header className="text-orange-500 font-bold text-xl ">
               Contact Us
             </header>
-            <fieldset className="form-control w-80">
+            <fieldset className="form-control lg:w-80 md:w-full w-80">
               <label className="label">
                 <span className="text-white ">Enter your email address</span>
               </label>
@@ -67,7 +67,7 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="username@site.com"
-                  className="input input-bordered w-full pr-16"
+                  className="input input-bordered w-full lg:pr-16"
                 />
                 <button className="bg-orange-500 h-12 px-4 rounded-r-md font-bold text-white absolute top-0 right-0">
                   Subscribe

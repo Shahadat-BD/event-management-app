@@ -17,12 +17,12 @@ const ServiceDetails = () => {
 
   return (
     <div>
-      <div className="w-[70%] m-auto my-10">
-        <img className="h-[600px] w-full" src={image} alt="" srcset="" />
-        <div className="-mt-20 absolute flex justify-center  items-center bg-orange-500 w-[70%] m-auto h-20 text-white">
+      <div className="lg:w-[70%] w-[95%] m-auto my-10">
+        <img className="lg:h-[600px] md:h-[500px] h-[350px] w-full" src={image} alt="" srcset="" />
+        <div className="-mt-20 absolute flex justify-center  items-center bg-orange-500 lg:w-[70%] w-[95%] m-auto h-20  text-white">
           <h3 className="lg:text-5xl text-2xl font-bold">{name}</h3>
         </div>
-        <div className="flex gap-5 my-6">
+        <div className="flex lg:flex-row md:flex-row flex-col gap-5 my-6">
           <div className="flex-1">
             <p className="text-2xl font-semibold my-5">
               Description Of {name}{" "}
