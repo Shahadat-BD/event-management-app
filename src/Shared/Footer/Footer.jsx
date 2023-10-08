@@ -49,7 +49,7 @@ const Footer = () => {
         <nav className="text-white">
           <header className="text-orange-500 font-bold text-xl">Company</header>
           <a className="link link-hover">Why Choose Us</a>
-          <a className="link link-hover">Contact Us</a>
+          <a className="link link-hover">Review</a>
           <a className="link link-hover">Services</a>
           <a className="link link-hover">Our Team</a>
           <a className="link link-hover">Our Gallery</a>
