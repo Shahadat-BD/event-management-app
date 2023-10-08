@@ -69,7 +69,7 @@ const Navbar = () => {
             color: isActive ? "orange" : "black",
             borderBottom: isActive ? "2px solid orange" : "none",
             background: isActive ? "none" : "none",
-          })} to={'/contact'}>Contact Us
+          })} to={'/review'}>Review
           </NavLink>
           </li>
        

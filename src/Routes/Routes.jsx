@@ -5,9 +5,9 @@ import Register from "../Authentication/Register/Register";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import NotFound from "../NotFound/NotFound";
 import Home from "../Pages/Home/Home";
-import Contact from "../Pages/Contact/Contact";
 import Gallery from "../Pages/Gallery/Gallery";
 import PrivateRoute from "./PrivateRoute";
+import Review from "../Pages/Review/Review";
 
 const router = createBrowserRouter([
     {
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
                 element: <Gallery></Gallery>
             }, 
             {
-                path: '/contact',
-                element: <Contact></Contact>
+                path: '/review',
+                element: <Review></Review>
             }, 
             {
                 path: '/service/:id', 
