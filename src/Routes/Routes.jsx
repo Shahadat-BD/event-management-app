@@ -5,7 +5,6 @@ import Register from "../Authentication/Register/Register";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import NotFound from "../NotFound/NotFound";
 import Home from "../Pages/Home/Home";
-import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import Gallery from "../Pages/Gallery/Gallery";
 import PrivateRoute from "./PrivateRoute";
@@ -23,10 +22,6 @@ const router = createBrowserRouter([
             {
                 path: '/gallery',
                 element: <Gallery></Gallery>
-            }, 
-            {
-                path: '/about',
-                element: <About></About>
             }, 
             {
                 path: '/contact',
