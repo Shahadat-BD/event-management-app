@@ -29,8 +29,40 @@ const Navbar = () => {
           })} to={'/'}>Home
         </NavLink>
         </li>
+        
+        {
+          !user ? 
+           <>
+              <li className='pr-10'>
+         <NavLink
+          className="px-0 rounded-none font-semibold text-md"
+          style={({ isActive }) => ({
+            color: isActive ? "orange" : "black",
+            borderBottom: isActive ? "2px solid orange" : "none",
+            background: isActive ? "none" : "none",
+          })} to={'/about'}>About Us
+          </NavLink>
+          </li>
 
-       <li className='pr-10'>
+          <li className='pr-10'>
+         <NavLink
+          className="px-0 rounded-none font-semibold text-md"
+          style={({ isActive }) => ({
+            color: isActive ? "orange" : "black",
+            borderBottom: isActive ? "2px solid orange" : "none",
+            background: isActive ? "none" : "none",
+          })} to={'/Blog'}>Blog
+          </NavLink>
+          </li>
+           </> 
+           :
+           ''
+
+        }
+        
+       {
+         user ? <>
+          <li className='pr-10'>
         <NavLink 
         className="px-0 rounded-none font-semibold text-md"
           style={({ isActive }) => ({
@@ -41,18 +73,6 @@ const Navbar = () => {
           </NavLink>
           </li>
        
-       {
-         user ? <>
-          <li className='pr-10'>
-         <NavLink
-          className="px-0 rounded-none font-semibold text-md"
-          style={({ isActive }) => ({
-            color: isActive ? "orange" : "black",
-            borderBottom: isActive ? "2px solid orange" : "none",
-            background: isActive ? "none" : "none",
-          })} to={'/about'}>About Us
-          </NavLink>
-          </li>
        <li className='pr-10'> 
        <NavLink 
        className="px-0 rounded-none font-semibold text-md"
