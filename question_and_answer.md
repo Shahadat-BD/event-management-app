@@ -94,9 +94,10 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: B:Hi there, undefined?
+#### Answer: B:Hi there, undefined
 
-<i>Write your explanation here</i>
+<i>B is correct answer. Because a parameter is declared in the function called "sayHi" but no value is passed in the parameter.
+  Because of which it shows undefined. just only return Hi there, but name is undefined</i>
 
 </p>
 </details>
