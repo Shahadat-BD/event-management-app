@@ -18,10 +18,10 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: A : {}?
+#### Answer: A : {} .
 
-<i>Write your explanation here</i>
-
+<i>Write your explanation here <br/></i>
+Answer is {}. Becasue first of all decalred a variable called "greeting" but not assign any value.as a result the answer would be undefined.But later, because of assign an curly bracket {} in the greeting variable. the answer is empty object it means {}.
 </p>
 </details>
 
