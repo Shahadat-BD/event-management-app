@@ -45,7 +45,7 @@ sum(1, "2");
 
 #### Answer: c : 12 ?
 
-<i>Write your explanation here</i>
+<i>Correct answer is 12. first of all I want to say that 12 is string not a number. because 2 input values taken in sum function. input one is 1 it just a number but another one is 2 . 2 is string not number. javascript dynamically typed based language. So Since the second input is a string, that's why JavaScript concatenates it and returns 12.  </i>
 
 </p>
 </details>
@@ -124,7 +124,7 @@ console.log(count);
 
 #### Answer: c: 3 ?
 
-<i>Write your explanation here</i>
+<i> Result C is correct becasue I can see the base of condition, how many times forEach method has been iteratd. if condition is true then itarate forEach method. other wise not iterate. So 0 is false Then will not be able to enter the ForEach method and not iterated. 1 is ture,then iterate count 1, 2 is ture,then iterate count 2. 3 is ture,then iterate count 3. Now since there are no more values in the array then the condition ends here. And counted three times so the answer is three  </i>
 
 </p>
 </details>
