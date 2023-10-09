@@ -11,7 +11,7 @@ const OurTeam = () => {
             <p className='text-gray-500 lg:text-base text-sm lg:w-[70%] w-full m-auto mb-3'>We have three crazy team.Their job is to manage our social events services.Our Team is very dedicated and helpful.From the experience of last three years, we can say that our team is very well organized and we have good feedback from people about our team.</p>
         </div>
 
-         <div className='mb-10' data-aos="fade-left"
+         <div className='mb-10' data-aos="fade-right"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000">
              
@@ -35,8 +35,8 @@ const OurTeam = () => {
          </div>
 
          <div className='mb-10' data-aos="fade-right"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="1000">
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
              <div className='flex gap-5 lg:flex-row flex-col shadow-lg lg:border-r-4 border-b-4 lg:border-b-0 border-blue-500'>
                 <img className='h-64 lg:w-80 w-full' src={team_2} alt="" srcset="" />
                 <div className='lg:p-0 p-3'>
@@ -56,7 +56,7 @@ const OurTeam = () => {
              
          </div>
 
-         <div className='mb-10' data-aos="fade-left"
+         <div className='mb-10' data-aos="fade-right"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000">
              

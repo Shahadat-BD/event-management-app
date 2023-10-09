@@ -35,7 +35,7 @@ const Gallery = () => {
         <div className='my-10 w-[85%] m-auto'>
             {/* Recent Our wedding event management gallery */}
             <h1 className='lg:text-4xl md:text-3xl text-lg font-bold my-2 text-center'>Our Recent event management Work </h1>
-             <div data-aos="fade-left"
+             <div data-aos="zoom-in"
                   data-aos-easing="ease-out-cubic"
                    data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-2 text-center'>Wedding Event</h1>
@@ -47,7 +47,7 @@ const Gallery = () => {
                 </div>
              </div>
 
-             <div data-aos="fade-right"
+             <div data-aos="zoom-in"
                   data-aos-easing="ease-out-cubic"
                    data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-5 text-center'> Birthday Parties Event</h1>
@@ -59,7 +59,7 @@ const Gallery = () => {
                 </div>
              </div>
 
-             <div data-aos="fade-left"
+             <div data-aos="zoom-in"
                   data-aos-easing="ease-out-cubic"
                    data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-5 text-center'>Anniversary Event</h1>
@@ -71,7 +71,7 @@ const Gallery = () => {
                 </div>
              </div>
 
-             <div data-aos="fade-right"
+             <div data-aos="zoom-in"
                   data-aos-easing="ease-out-cubic"
                    data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-5 text-center'> Retirement Event</h1>
@@ -83,7 +83,7 @@ const Gallery = () => {
                 </div>
              </div>
 
-             <div data-aos="fade-left"
+             <div data-aos="zoom-in"
                   data-aos-easing="ease-out-cubic"
                    data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-5 text-center'> Baby shower Event</h1>
@@ -95,7 +95,7 @@ const Gallery = () => {
                 </div>
              </div>
 
-             <div data-aos="fade-right"
+             <div data-aos="zoom-in"
                   data-aos-easing="ease-out-cubic"
                    data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-5 text-center'> Engagement Wedding Event</h1>

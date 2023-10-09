@@ -13,7 +13,7 @@ import review_5 from '../../assets/images/review/review-5.jpg'
 import review_6 from '../../assets/images/review/review-6.jpg'
 const Review = () => {
     return (
-        <div className='my-20 lg:w-[85%] w-[90%] m-auto'>
+        <div className='my-20 lg:w-[80%] w-[90%] m-auto'>
               <div data-aos="zoom-in"
                   data-aos-easing="ease-out-cubic"
                    data-aos-duration="1000" className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-5'> 

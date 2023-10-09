@@ -1,13 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import {FiEye,FiEyeOff} from 'react-icons/fi'
 const Login = () => {
   const location = useLocation();
   const navigate = useNavigate()
+  const [showPassword,setShowPassword] = useState(false)
   const { setUser, signInUser,googleSignIn} = useContext(AuthContext);
 
   const handleLoginForm = (e) => {
@@ -64,12 +65,13 @@ const Login = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   name="password"
                   placeholder="password"
                   className="input input-bordered"
                   required
                 />
+                  <span onClick={()=>setShowPassword(!showPassword)} className='absolute lg:ml-[350px] ml-[300px] md:ml-[350px] mt-[52px] cursor-pointer'>{showPassword ? <FiEye/> : <FiEyeOff/>}</span>
               </div>
               <div className="form-control mt-6">
                 <input  className="text-white border-none cursor-pointer bg-orange-500 py-3 text-lg font-semibold rounded-md"

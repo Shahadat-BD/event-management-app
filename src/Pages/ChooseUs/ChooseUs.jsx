@@ -10,7 +10,7 @@ const ChooseUs = () => {
          data-aos-duration="1000"
          className="lg:w-[400px] w-full" src={chooseUs} alt="" srcset="" />
         <div
-           data-aos="fade-left"
+           data-aos="fade-up"
            data-aos-easing="ease-out-cubic"
            data-aos-duration="1000"
          className="lg:ml-10 ml-2">
