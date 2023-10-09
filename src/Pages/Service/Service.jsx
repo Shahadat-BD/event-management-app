@@ -17,7 +17,9 @@ const Service = () => {
            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5'>
            {
             Service.map(eventService => <>
-                <div key={eventService.id} className='rounded-lg'>
+                <div data-aos="zoom-in"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000" key={eventService.id} className='rounded-lg'>
                    <img className='h-64 w-full rounded-md' src={eventService.image} alt="" srcset="" />
                    <h3 className='text-2xl my-2 font-semibold'>{eventService.name}</h3>
                    <p className='text-lg font-bold text-gray-500'>${eventService.price}</p>

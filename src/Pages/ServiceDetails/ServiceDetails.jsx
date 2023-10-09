@@ -17,8 +17,18 @@ const ServiceDetails = () => {
 
   return (
     <div>
-      <div className="lg:w-[70%] w-[95%] m-auto my-10">
-        <img className="lg:h-[600px] md:h-[500px] h-[350px] w-full" src={image} alt="" srcset="" />
+      <div
+        data-aos="zoom-in"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+        className="lg:w-[70%] w-[95%] m-auto my-10"
+      >
+        <img
+          className="lg:h-[600px] md:h-[500px] h-[350px] w-full"
+          src={image}
+          alt=""
+          srcset=""
+        />
         <div className="-mt-20 absolute flex justify-center  items-center bg-orange-500 lg:w-[70%] w-[95%] m-auto h-20  text-white">
           <h3 className="lg:text-5xl text-2xl font-bold">{name}</h3>
         </div>

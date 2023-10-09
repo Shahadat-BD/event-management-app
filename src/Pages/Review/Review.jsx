@@ -14,7 +14,9 @@ import review_6 from '../../assets/images/review/review-6.jpg'
 const Review = () => {
     return (
         <div className='my-20 lg:w-[85%] w-[90%] m-auto'>
-              <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-5'> 
+              <div data-aos="zoom-in"
+                  data-aos-easing="ease-out-cubic"
+                   data-aos-duration="1000" className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-5'> 
                  <div className='text-center bg-gray-50 rounded-lg p-5'>
                  <img className='w-16 h-16 rounded-full m-auto absolute -mt-14 ml-32' src={review_1} alt="" srcset="" />
                   <h1 className='text-2xl text-orange-500 font-semibold my-3'>Michel David</h1>

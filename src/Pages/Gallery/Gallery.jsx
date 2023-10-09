@@ -35,7 +35,9 @@ const Gallery = () => {
         <div className='my-10 w-[85%] m-auto'>
             {/* Recent Our wedding event management gallery */}
             <h1 className='lg:text-4xl md:text-3xl text-lg font-bold my-2 text-center'>Our Recent event management Work </h1>
-             <div>
+             <div data-aos="fade-left"
+                  data-aos-easing="ease-out-cubic"
+                   data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-2 text-center'>Wedding Event</h1>
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2'>
                     <img className='w-full h-64 rounded-md' src={wedding_2} alt="" srcset="" />
@@ -45,7 +47,9 @@ const Gallery = () => {
                 </div>
              </div>
 
-             <div>
+             <div data-aos="fade-right"
+                  data-aos-easing="ease-out-cubic"
+                   data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-5 text-center'> Birthday Parties Event</h1>
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2'>
                     <img className='w-full h-64 rounded-md' src={birthday_2} alt="" srcset="" />
@@ -54,7 +58,10 @@ const Gallery = () => {
                     <img className='w-full h-64 rounded-md' src={birthday_5} alt="" srcset="" />
                 </div>
              </div>
-             <div>
+
+             <div data-aos="fade-left"
+                  data-aos-easing="ease-out-cubic"
+                   data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-5 text-center'>Anniversary Event</h1>
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2'>
                     <img className='w-full h-64 rounded-md' src={anniversary_2} alt="" srcset="" />
@@ -63,7 +70,10 @@ const Gallery = () => {
                     <img className='w-full h-64 rounded-md' src={anniversary_5} alt="" srcset="" />
                 </div>
              </div>
-             <div>
+
+             <div data-aos="fade-right"
+                  data-aos-easing="ease-out-cubic"
+                   data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-5 text-center'> Retirement Event</h1>
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2'>
                     <img className='w-full h-64 rounded-md' src={retirement_2} alt="" srcset="" />
@@ -72,7 +82,10 @@ const Gallery = () => {
                     <img className='w-full h-64 rounded-md' src={retirement_5} alt="" srcset="" />
                 </div>
              </div>
-             <div>
+
+             <div data-aos="fade-left"
+                  data-aos-easing="ease-out-cubic"
+                   data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-5 text-center'> Baby shower Event</h1>
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2'>
                     <img className='w-full h-64 rounded-md' src={baby_2} alt="" srcset="" />
@@ -81,7 +94,10 @@ const Gallery = () => {
                     <img className='w-full h-64 rounded-md' src={baby_5} alt="" srcset="" />
                 </div>
              </div>
-             <div>
+
+             <div data-aos="fade-right"
+                  data-aos-easing="ease-out-cubic"
+                   data-aos-duration="1000">
                 <h1 className='text-pink-500 text-3xl font-bold my-5 text-center'> Engagement Wedding Event</h1>
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2'>
                     <img className='w-full h-64 rounded-md' src={engagement_2} alt="" srcset="" />
