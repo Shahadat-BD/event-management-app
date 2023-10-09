@@ -70,7 +70,7 @@ console.log(food);
 
 #### Answer: A : ['🍕', '🍫', '🥑', '🍔'] ?
 
-<i>Write your explanation here</i>
+<i>Write answer is A.Because the code does not modify the food array. it change the value of info.favoriteFood to "🍝". However, this change only affects the info object; it does not modify the original food array. that's whay A is correct </i>
 
 </p>
 </details>
