@@ -18,10 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A : {} .
 
-<i>Write your explanation here</i>
-
+<i>Answer is {}. Becasue first of all decalred a variable called "greeting" but not assign any value.as a result the answer would be undefined.But later, because of assign an curly bracket {} in the greeting variable. the answer is empty object it means {}.</i>
 </p>
 </details>
 
@@ -43,9 +42,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: c : 12 ?
 
-<i>Write your explanation here</i>
+<i>Correct answer is 12. first of all I want to say that 12 is string not a number. because 2 input values taken in sum function. input one is 1 it just a number but another one is 2 . 2 is string not number. javascript dynamically typed based language. So Since the second input is a string, that's why JavaScript concatenates it and returns 1 + "2" = 12.  </i>
 
 </p>
 </details>
@@ -69,9 +68,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A : ['🍕', '🍫', '🥑', '🍔'] ?
 
-<i>Write your explanation here</i>
+<i>Write answer is A.Because the code does not modify the food array. it change the value of info.favoriteFood to "🍝". However, this change only affects the info object; it does not modify the original food array. that's whay A is correct </i>
 
 </p>
 </details>
@@ -94,9 +93,10 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B:Hi there, undefined
 
-<i>Write your explanation here</i>
+<i>B is correct answer. Because a parameter is declared in the function called "sayHi" but no value is passed in the parameter.
+  Because of which it shows undefined. just only return Hi there, but name is undefined</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: c: 3 ?
 
-<i>Write your explanation here</i>
+<i> Result C is correct becasue I can see the base of condition, how many times forEach method has been iteratd. if condition is true then itarate forEach method. other wise not iterate. So 0 is false Then will not be able to enter the ForEach method and not iterated. 1 is ture,then iterate count 1, 2 is ture,then iterate count 2. 3 is ture,then iterate count 3. Now since there are no more values in the array then the condition ends here. And counted three times so the answer is three  </i>
 
 </p>
 </details>
