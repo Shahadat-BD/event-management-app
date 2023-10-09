@@ -29,7 +29,7 @@ const ServiceDetails = () => {
           alt=""
           srcset=""
         />
-        <div className="-mt-20 absolute flex justify-center  items-center bg-orange-500 lg:w-[70%] w-[95%] m-auto h-20  text-white">
+        <div className="-mt-20 absolute flex justify-center  items-center bg-orange-500 w-full m-auto h-20  text-white">
           <h3 className="lg:text-5xl text-2xl font-bold">{name}</h3>
         </div>
         <div className="flex lg:flex-row md:flex-row flex-col gap-5 my-6">
