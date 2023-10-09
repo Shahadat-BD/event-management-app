@@ -44,7 +44,7 @@ sum(1, "2");
 
 #### Answer: c : 12 ?
 
-<i>Correct answer is 12. first of all I want to say that 12 is string not a number. because 2 input values taken in sum function. input one is 1 it just a number but another one is 2 . 2 is string not number. javascript dynamically typed based language. So Since the second input is a string, that's why JavaScript concatenates it and returns 12.  </i>
+<i>Correct answer is 12. first of all I want to say that 12 is string not a number. because 2 input values taken in sum function. input one is 1 it just a number but another one is 2 . 2 is string not number. javascript dynamically typed based language. So Since the second input is a string, that's why JavaScript concatenates it and returns 1 + "2" = 12.  </i>
 
 </p>
 </details>
